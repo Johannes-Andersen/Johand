@@ -1,0 +1,8 @@
+{
+  "title": "Johand.dev | Home",
+  "description": "Welcome! This is the main page of Johand.dev",
+  "currentLocale": "Current locale: {{locale}}",
+  "defaultLocale": "Default locale: {{locale}}",
+  "configuredLocales": "Configured locales: {{locales}}",
+  "content": "Hi, I am the main page content D:"
+}

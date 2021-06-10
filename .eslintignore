@@ -3,3 +3,4 @@ node_modules
 .next
 next-env.d.ts
 next.config.js
+next-i18next.config.js
