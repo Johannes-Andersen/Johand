@@ -17,10 +17,14 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
             key={locale}
             rel="alternate"
             hrefLang={locale}
-            href={`/${locale}${pathname}`}
+            href={`https://johand/dev/${locale}${pathname}`}
           />
         ))}
-        <link rel="alternate" hrefLang="x-default" href={pathname} />
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href={`https://johand.dev/${pathname}`}
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
