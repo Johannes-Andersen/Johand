@@ -1,0 +1,39 @@
+{
+  "name": "johand",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Johannes Andersen",
+    "url": "https://johand.dev/"
+  },
+  "homepage": "https://johand.dev",
+  "bugs": {
+    "url": "https://github.com/Johannes-Andersen/Johand/issues"
+  },
+  "engines": {
+    "node": "16",
+    "npm": "7"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "npm run lint && npm run type-check",
+    "type-check": "tsc --noEmit --skipLibCheck",
+    "lint": "eslint . && prettier --check .",
+    "lint:fix": "prettier --write . && eslint --fix ."
+  },
+  "dependencies": {
+    "next": "10.2.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.11",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "eslint": "^7.28.0",
+    "prettier": "^2.3.1",
+    "typescript": "4.3.2"
+  }
+}
