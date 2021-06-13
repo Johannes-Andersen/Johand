@@ -25,7 +25,6 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
           hrefLang="x-default"
           href={`https://johand.dev/${pathname}`}
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
     </>
