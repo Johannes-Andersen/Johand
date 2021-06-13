@@ -14,8 +14,6 @@ const Home: FC = () => {
     <div>
       <Head>
         <title>{t('common:title')}</title>
-
-        <meta name="description" content={t('common:description')} />
       </Head>
 
       <main>

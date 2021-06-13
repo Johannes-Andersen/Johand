@@ -12,6 +12,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         {locales?.map((locale) => (
           <link
             key={locale}
