@@ -5,9 +5,6 @@ const { i18n } = require('./next-i18next.config')
 module.exports = withPWA({
   poweredByHeader: false,
   reactStrictMode: true,
-  future: {
-    webpack5: true,
-  },
   pwa: {
     dest: 'public',
     runtimeCaching,
