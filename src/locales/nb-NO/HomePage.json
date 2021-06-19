@@ -1,6 +1,6 @@
 {
   "title": "Johand.dev | Hjem",
-  "description": "Velkommen! Dette er hjemmesiden til Johand.dev",
+  "description": "Dette er hjemmesiden til Johand.dev",
   "currentLocale": "Naaverende spraak: {{locale}}",
   "defaultLocale": "Standard spraaket: {{locale}}",
   "configuredLocales": "Coonfigurerte spraak: {{locales}}",

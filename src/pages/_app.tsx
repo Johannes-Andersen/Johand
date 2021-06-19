@@ -1,9 +1,9 @@
 import type { AppProps } from 'next/app'
+import { ChakraProvider } from '@chakra-ui/react'
 import { FC } from 'react'
 import Head from 'next/head'
 import { appWithTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
-import '../styles/globals.css'
 
 const App: FC<AppProps> = ({ Component, pageProps }) => {
   const router = useRouter()
@@ -27,7 +27,9 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
           href={`https://johand.dev/${pathname}`}
         />
       </Head>
-      <Component {...pageProps} />
+      <ChakraProvider>
+        <Component {...pageProps} />
+      </ChakraProvider>
     </>
   )
 }

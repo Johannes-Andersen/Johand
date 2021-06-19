@@ -6,28 +6,29 @@ import { UserConfig, useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const Home: FC = () => {
-  const { t } = useTranslation(['footer', 'common'])
+  const { t } = useTranslation(['HomePage'])
   const router = useRouter()
   const { locale, locales, defaultLocale } = router
 
   return (
     <div>
       <Head>
-        <title>{t('common:title')}</title>
+        <title>{t('HomePage:title')}</title>
       </Head>
 
       <main>
-        <p>{t('common:currentLocale', { locale: locale })}</p>
-        <p>{t('common:defaultLocale', { locale: defaultLocale })}</p>
+        <p>{t('common:siteName')}</p>
+        <p>{t('HomePage:currentLocale', { locale: locale })}</p>
+        <p>{t('HomePage:defaultLocale', { locale: defaultLocale })}</p>
         <p>
-          {t('common:configuredLocales', {
+          {t('HomePage:configuredLocales', {
             locales: JSON.stringify(locales),
           })}
         </p>
-        <p> {t('common:content')}</p>
+        <p> {t('HomePage:content')}</p>
       </main>
 
-      <footer>{t('footer:content')}</footer>
+      <footer>{t('HomePage:description')}</footer>
     </div>
   )
 }
@@ -44,7 +45,7 @@ export const getStaticProps = async ({
   }
 }> => ({
   props: {
-    ...(await serverSideTranslations(locale, ['common', 'footer'])),
+    ...(await serverSideTranslations(locale, ['common', 'HomePage'])),
   },
 })
 
