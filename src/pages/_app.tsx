@@ -18,7 +18,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
             key={locale}
             rel="alternate"
             hrefLang={locale}
-            href={`https://johand/dev/${locale}${pathname}`}
+            href={`https://johand.dev/${locale}${pathname}`}
           />
         ))}
         <link

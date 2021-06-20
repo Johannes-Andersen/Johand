@@ -70,7 +70,7 @@ class MyDocument extends Document {
           />
           <meta
             name="twitter:image"
-            content="https://yourdomain.com/icons/android-chrome-192x192.png"
+            content="https://johand.dev/images/logo-512.png"
           />
           <meta name="twitter:creator" content="@Johand199" />
           <meta property="og:type" content="website" />
@@ -83,7 +83,7 @@ class MyDocument extends Document {
           <meta property="og:url" content="https://johand.dev" />
           <meta
             property="og:image"
-            content="https://yourdomain.com/icons/apple-touch-icon.png"
+            content="https://johand.dev/images/logo-512.png"
           />
         </Head>
         <body>
