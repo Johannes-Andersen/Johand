@@ -18,7 +18,7 @@
   "plugins": ["@typescript-eslint"],
   "rules": {
     "indent": ["off"],
-    "linebreak-style": ["error", "unix"],
+    "linebreak-style": ["error", "windows"],
     "brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
     "comma-spacing": "error",
     "comma-style": "error",
