@@ -1,6 +1,7 @@
 const withPWA = require('next-pwa')
 const runtimeCaching = require('next-pwa/cache')
 const { i18n } = require('./next-i18next.config')
+const withPreact = require('next-plugin-preact')
 
 const securityHeaders = [
   {
@@ -42,7 +43,7 @@ const securityHeaders = [
   },
 ]
 
-module.exports = withPWA({
+module.exports = withPreact(withPWA({
   async headers() {
     return [
       {
@@ -62,4 +63,4 @@ module.exports = withPWA({
     runtimeCaching,
   },
   i18n,
-})
+}))
