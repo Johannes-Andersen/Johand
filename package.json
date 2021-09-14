@@ -29,7 +29,7 @@
     "@emotion/styled": "11.3.0",
     "framer-motion": "4.1.17",
     "next": "11.1.2",
-    "next-i18next": "8.7.0",
+    "next-i18next": "8.8.0",
     "next-pwa": "5.3.1",
     "next-plugin-preact": "3.0.6",
     "preact": "10.5.14",
