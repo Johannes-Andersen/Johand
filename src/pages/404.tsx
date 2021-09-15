@@ -91,7 +91,6 @@ export const getStaticProps = async ({
   props: {
     _nextI18Next: {
       initialI18nStore: unknown
-      initialLocale: string
       userConfig: UserConfig | null
     }
   }
