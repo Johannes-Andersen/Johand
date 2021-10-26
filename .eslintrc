@@ -8,6 +8,7 @@
     "plugin:@typescript-eslint/recommended",
     "next",
     "next/core-web-vitals",
+    "plugin:jsx-a11y/recommended",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
@@ -45,7 +46,7 @@
     "space-infix-ops": "error",
     "space-unary-ops": "error",
     "spaced-comment": "error",
-    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-console": ["error", { "allow": ["warn", "error", "debug"] }],
     "no-loss-of-precision": "error",
     "no-template-curly-in-string": "error",
     "default-case": "error",
@@ -59,6 +60,7 @@
     "no-unneeded-ternary": "error",
     "arrow-spacing": "error",
     "no-useless-rename": "error",
+    "jsx-a11y/no-onchange": "off",
     "@typescript-eslint/array-type": ["error", { "default": "generic" }],
     "@typescript-eslint/member-ordering": [
       "error",
