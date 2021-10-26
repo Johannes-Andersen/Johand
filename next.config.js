@@ -52,9 +52,6 @@ module.exports = {
   images: {
     formats: ['image/avif', 'image/webp'],
   },
-  experimental: {
-    esmExternals: false // TODO: https://github.com/vercel/next.js/issues/30330
-  },
   poweredByHeader: false,
   reactStrictMode: true,
   swcMinify: true,
