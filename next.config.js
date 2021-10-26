@@ -52,6 +52,10 @@ module.exports = {
   images: {
     formats: ['image/avif', 'image/webp'],
   },
+  experimental: {
+    concurrentFeatures: true,
+    serverComponents: true,
+  },
   poweredByHeader: false,
   reactStrictMode: true,
   swcMinify: true,
