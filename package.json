@@ -11,7 +11,7 @@
     "url": "https://github.com/Johannes-Andersen/Johand/issues"
   },
   "engines": {
-    "node": "16",
+    "node": ">=14",
     "npm": "8"
   },
   "scripts": {
