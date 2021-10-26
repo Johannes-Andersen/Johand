@@ -36,7 +36,7 @@ const securityHeaders = [
   },
   {
     key: 'Content-Security-Policy',
-    value: "default-src 'self' 'unsafe-inline' vitals.vercel-insights.com johand.dev fonts.gstatic.com fonts.googleapis.com"
+    value: "default-src 'self' johand.dev; script-src 'self' 'unsafe-inline' johand.dev; script-src-elem 'self' 'unsafe-inline' johand.dev; script-src-attr 'self' 'unsafe-inline' johand.dev; style-src 'self' 'unsafe-inline' johand.dev fonts.gstatic.com fonts.googleapis.com; style-src-elem 'self' 'unsafe-inline' johand.dev fonts.gstatic.com fonts.googleapis.com; style-src-attr 'self' 'unsafe-inline' johand.dev fonts.gstatic.com fonts.googleapis.com; img-src 'self'; font-src 'self' fonts.gstatic.com fonts.googleapis.com; connect-src 'self' vitals.vercel-insights.com johand.dev fonts.gstatic.com fonts.googleapis.com; media-src 'self'; object-src 'self'; prefetch-src 'self' vitals.vercel-insights.com johand.dev fonts.gstatic.com fonts.googleapis.com; child-src 'self'; frame-src 'self'; worker-src 'self'; frame-ancestors 'self'; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content; sandbox allow-forms allow-same-origin allow-scripts allow-top-navigation; base-uri 'self'; manifest-src 'self'"
   }
 ]
 
