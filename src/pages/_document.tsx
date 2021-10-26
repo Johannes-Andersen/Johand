@@ -19,9 +19,9 @@ export default function Document() {
           content="Everything you need to know about Johannes, aka. Johand."
         />
         <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="msapplication-TileColor" content="#1a202c" />
+        <meta name="msapplication-TileColor" content="#23272a" />
         <meta name="msapplication-tap-highlight" content="no" />
-        <meta name="theme-color" content="#1a202c" />
+        <meta name="theme-color" content="#23272a" />
 
         <link rel="apple-touch-icon" href="/images/logo-maskable-512.png" />
         <link
@@ -42,7 +42,7 @@ export default function Document() {
         <link rel="apple-touch-icon" sizes="64x64" href="/images/logo-64.png" />
 
         <link rel="manifest" href="/manifest.json" />
-        <link rel="mask-icon" href="/images/logo.svg" color="#1a202c" />
+        <link rel="mask-icon" href="/images/logo.svg" color="#23272a" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:url" content="https://johand.dev" />

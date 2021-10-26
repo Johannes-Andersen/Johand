@@ -36,12 +36,13 @@ const securityHeaders = [
   },
   {
     key: 'Content-Security-Policy',
-    value: "default-src 'self' 'unsafe-inline' 'unsafe-eval' vitals.vercel-insights.com johand.dev fonts.gstatic.com fonts.googleapis.com"
+    value: "default-src 'self' 'unsafe-inline' vitals.vercel-insights.com johand.dev fonts.gstatic.com fonts.googleapis.com"
   }
 ]
 
 module.exports = {
   async headers() {
+    if(process.env.NODE_ENV === 'development') return []
     return [
       {
         source: '/(.*)',
