@@ -3,6 +3,7 @@ import { FC } from 'react'
 import Head from 'next/head'
 import { appWithTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
+import './_app.css'
 
 const App: FC<AppProps> = ({ Component, pageProps }) => {
   const router = useRouter()

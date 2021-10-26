@@ -1,14 +1,13 @@
 import { FC } from 'react'
 import { GetStaticPropsContext } from 'next'
 import Head from 'next/head'
-import { useRouter } from 'next/router'
+import styles from './index.module.css'
+
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 
 const Home: FC = () => {
   const { t } = useTranslation(['HomePage'])
-  const router = useRouter()
-  const { locale, locales, defaultLocale } = router
 
   return (
     <div>
@@ -16,19 +15,10 @@ const Home: FC = () => {
         <title>{t('HomePage:title')}</title>
       </Head>
 
-      <main>
-        <p>{t('common:siteName')}</p>
-        <p>{t('HomePage:currentLocale', { locale: locale })}</p>
-        <p>{t('HomePage:defaultLocale', { locale: defaultLocale })}</p>
-        <p>
-          {t('HomePage:configuredLocales', {
-            locales: JSON.stringify(locales),
-          })}
-        </p>
+      <main className={styles.main}>
+        <h1>{t('common:siteName')}</h1>
         <p> {t('HomePage:content')}</p>
       </main>
-
-      <footer>{t('HomePage:description')}</footer>
     </div>
   )
 }

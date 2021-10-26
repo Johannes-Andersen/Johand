@@ -1,7 +1,4 @@
 {
   "pageTitle": " Johand.dev | Internal Error",
-  "shortDescription": "Error - 500",
-  "title": "Internal Server Error... That's an error.",
-  "description": "Apologies, it's me, not you! The server encountered an internal error and was unable to complete your request.",
-  "backButton": "Get back to safety!"
+  "shortDescription": "Error - 500"
 }
