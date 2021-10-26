@@ -1,7 +1,8 @@
 import { FC } from 'react'
 import Head from 'next/head'
+import { GetStaticPropsContext } from 'next'
 
-import { UserConfig, useTranslation } from 'next-i18next'
+import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const FiveHundredPage: FC = () => {
@@ -18,18 +19,9 @@ const FiveHundredPage: FC = () => {
   )
 }
 
-export const getStaticProps = async ({
-  locale,
-}: Record<string, string>): Promise<{
+export const getStaticProps = async ({ locale }: GetStaticPropsContext) => ({
   props: {
-    _nextI18Next: {
-      initialI18nStore: unknown
-      userConfig: UserConfig | null
-    }
-  }
-}> => ({
-  props: {
-    ...(await serverSideTranslations(locale, ['FiveHundredPage'])),
+    ...(await serverSideTranslations(locale || '', ['FiveHundredPage'])),
   },
 })
 
