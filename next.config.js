@@ -34,6 +34,10 @@ const securityHeaders = [
     key: 'Cross-Origin-Opener-Policy',
     value: 'same-origin',
   },
+  {
+    key: 'Content-Security-Policy',
+    value: "default-src 'self' 'unsafe-inline' 'unsafe-eval' vitals.vercel-insights.com johand.dev fonts.gstatic.com fonts.googleapis.com"
+  }
 ]
 
 module.exports = {
