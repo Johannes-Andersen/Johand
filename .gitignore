@@ -32,9 +32,3 @@ yarn-error.log*
 
 # vercel
 .vercel
-
-# PWA generated code
-public/sw.js
-public/workbox-*.js
-public/fallback-*.js
-public/*.js.map

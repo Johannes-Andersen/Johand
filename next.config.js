@@ -1,7 +1,4 @@
-const withPWA = require('next-pwa')
-const runtimeCaching = require('next-pwa/cache')
 const { i18n } = require('./next-i18next.config')
-const withPreact = require('next-plugin-preact')
 
 const securityHeaders = [
   {
@@ -34,16 +31,12 @@ const securityHeaders = [
     value: 'strict-origin-when-cross-origin',
   },
   {
-    key: 'Cross-Origin-Embedder-Policy',
-    value: 'require-corp',
-  },
-  {
     key: 'Cross-Origin-Opener-Policy',
     value: 'same-origin',
   },
 ]
 
-module.exports = withPreact(withPWA({
+module.exports = {
   async headers() {
     return [
       {
@@ -58,9 +51,6 @@ module.exports = withPreact(withPWA({
   },
   poweredByHeader: false,
   reactStrictMode: true,
-  pwa: {
-    dest: 'public',
-    runtimeCaching,
-  },
+  swcMinify: true,
   i18n,
-}))
+}
