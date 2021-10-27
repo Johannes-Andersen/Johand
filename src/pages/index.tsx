@@ -18,6 +18,15 @@ const Home: FC = () => {
     router.push({ pathname, query }, asPath, { locale: newLocale })
   }
 
+  function generatePassword() {
+    // BAD: the random suffix is not cryptographically secure
+    const suffix = Math.random()
+    const password = 'myPassword' + suffix
+    return password
+  }
+
+  generatePassword()
+
   return (
     <div>
       <Head>
