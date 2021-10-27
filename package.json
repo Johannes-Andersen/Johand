@@ -24,10 +24,10 @@
     "lint:fix": "prettier --write . && next lint --fix ."
   },
   "dependencies": {
-    "next": "12.0.1",
+    "next": "12.0.2-canary.2",
     "next-i18next": "8.9.0",
-    "react": "18.0.0-alpha-4298ddbc5-20211023",
-    "react-dom": "18.0.0-alpha-4298ddbc5-20211023"
+    "react": "18.0.0-alpha-6c3dcc7a4-20211027",
+    "react-dom": "18.0.0-alpha-6c3dcc7a4-20211027"
   },
   "devDependencies": {
     "@types/react": "17.0.33",
