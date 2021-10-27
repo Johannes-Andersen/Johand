@@ -12,7 +12,7 @@
   },
   "engines": {
     "node": ">=14",
-    "npm": "8"
+    "npm": ">=7"
   },
   "scripts": {
     "dev": "next dev",
@@ -24,7 +24,7 @@
     "lint:fix": "prettier --write . && next lint --fix ."
   },
   "dependencies": {
-    "next": "12.0.0",
+    "next": "12.0.1",
     "next-i18next": "8.9.0",
     "react": "18.0.0-alpha-4298ddbc5-20211023",
     "react-dom": "18.0.0-alpha-4298ddbc5-20211023"
@@ -34,7 +34,7 @@
     "@typescript-eslint/eslint-plugin": "5.2.0",
     "@typescript-eslint/parser": "5.2.0",
     "eslint": "7.32.0",
-    "eslint-config-next": "12.0.0",
+    "eslint-config-next": "12.0.1",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "prettier": "2.4.1",
