@@ -58,8 +58,8 @@ module.exports = {
     formats: ['image/avif', 'image/webp'],
   },
   experimental: {
-    concurrentFeatures: true,
-    serverComponents: true,
+    concurrentFeatures: false, // TODO: Temp disable due to https://github.com/vercel/next.js/issues/30424
+    serverComponents: false, // TODO: Temp disable due to https://github.com/vercel/next.js/issues/30424
   },
   poweredByHeader: false,
   reactStrictMode: true,
