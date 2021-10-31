@@ -1,28 +1,20 @@
 import { FC } from 'react'
 import Head from 'next/head'
-import { GetStaticPropsContext } from 'next'
-
-import { useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useRouter } from 'next/router'
+import { translate } from 'locales'
 
 const FiveHundredPage: FC = () => {
-  const { t } = useTranslation('FiveHundredPage')
+  const router = useRouter()
+  const { locale } = router
 
   return (
     <>
       <Head>
-        <title>{t('FiveHundredPage:pageTitle')}</title>
+        <title>{translate({ key: 'FiveHundredPage.pageTitle', locale })}</title>
       </Head>
-
-      {t('FiveHundredPage:shortDescription')}
+      {translate({ key: 'FiveHundredPage.shortDescription', locale })}
     </>
   )
 }
-
-export const getStaticProps = async ({ locale }: GetStaticPropsContext) => ({
-  props: {
-    ...(await serverSideTranslations(locale || '', ['FiveHundredPage'])),
-  },
-})
 
 export default FiveHundredPage

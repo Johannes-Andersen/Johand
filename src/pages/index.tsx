@@ -1,19 +1,14 @@
 import { FC } from 'react'
-import { GetStaticPropsContext } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import styles from './index.module.css'
-
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useTranslation } from 'next-i18next'
+import { translate } from 'locales'
 
 const Home: FC = () => {
-  const { t } = useTranslation(['HomePage'])
   const router = useRouter()
   const { locale, pathname, query, asPath } = router
 
   const changeLanguage = (newLocale: string): void => {
-    console.debug(newLocale)
     document.cookie = `NEXT_LOCALE=${newLocale}; max-age=7889231; SameSite=strict; Secure`
     router.push({ pathname, query }, asPath, { locale: newLocale })
   }
@@ -21,12 +16,12 @@ const Home: FC = () => {
   return (
     <div>
       <Head>
-        <title>{t('HomePage:title')}</title>
+        <title>{translate({ key: 'HomePage.title', locale })}</title>
       </Head>
 
       <main className={styles.main}>
-        <h1>{t('common:siteName')}</h1>
-        <p> {t('HomePage:content')}</p>
+        <h1>{translate({ key: 'common.siteName', locale })}</h1>
+        <p>{translate({ key: 'HomePage.content', locale })}</p>
 
         <select
           className={styles.languageSelect}
@@ -42,11 +37,5 @@ const Home: FC = () => {
     </div>
   )
 }
-
-export const getStaticProps = async ({ locale }: GetStaticPropsContext) => ({
-  props: {
-    ...(await serverSideTranslations(locale || '', ['common', 'HomePage'])),
-  },
-})
 
 export default Home

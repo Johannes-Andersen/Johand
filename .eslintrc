@@ -60,6 +60,7 @@
     "no-unneeded-ternary": "error",
     "arrow-spacing": "error",
     "no-useless-rename": "error",
+    "import/no-anonymous-default-export": "off",
     "jsx-a11y/no-onchange": "off",
     "@typescript-eslint/array-type": ["error", { "default": "generic" }],
     "@typescript-eslint/member-ordering": [
