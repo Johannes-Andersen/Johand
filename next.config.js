@@ -1,5 +1,3 @@
-const { i18n } = require('./next-i18next.config')
-
 const securityHeaders = [
   {
     key: 'X-DNS-Prefetch-Control',
@@ -58,11 +56,14 @@ module.exports = {
     formats: ['image/avif', 'image/webp'],
   },
   experimental: {
-    concurrentFeatures: false, // TODO: Temp disable due to https://github.com/vercel/next.js/issues/30424
-    serverComponents: false, // TODO: Temp disable due to https://github.com/vercel/next.js/issues/30424
+    concurrentFeatures: false,
+    serverComponents: false,
   },
   poweredByHeader: false,
   reactStrictMode: true,
   swcMinify: true,
-  i18n,
+  i18n: {
+    locales: ['en', 'nb-NO'],
+    defaultLocale: 'en',
+  },
 }
