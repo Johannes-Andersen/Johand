@@ -1,15 +1,15 @@
-/* eslint-disable @next/next/no-page-custom-font */
 import { Html, Head, Main, NextScript } from 'next/document'
 
 const Document = () => {
   return (
     <Html>
       <Head>
+        {/* TODO: https://github.com/vercel/next.js/issues/29970 */}
+        {/* eslint-disable @next/next/no-page-custom-font */}
         <link
           href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
           rel="stylesheet"
         />
-
         <meta name="application-name" content="Johannes' Website" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -22,7 +22,6 @@ const Document = () => {
         <meta name="msapplication-TileColor" content="#23272a" />
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="theme-color" content="#23272a" />
-
         <link rel="apple-touch-icon" href="/images/logo-maskable-512.png" />
         <link
           rel="apple-touch-icon"

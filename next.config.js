@@ -56,8 +56,8 @@ module.exports = {
     formats: ['image/avif', 'image/webp'],
   },
   experimental: {
-    concurrentFeatures: false,
-    serverComponents: false,
+    concurrentFeatures: false, // TODO: enable when safe
+    serverComponents: false, // TODO: enable when safe
   },
   poweredByHeader: false,
   reactStrictMode: true,
