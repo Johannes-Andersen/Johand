@@ -29,7 +29,7 @@
     "react-dom": "18.0.0-alpha-9fb344225-20211102"
   },
   "devDependencies": {
-    "@types/react": "17.0.37",
+    "@types/react": "17.0.38",
     "@typescript-eslint/eslint-plugin": "5.6.0",
     "@typescript-eslint/parser": "5.6.0",
     "eslint": "8.4.1",
