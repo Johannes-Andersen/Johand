@@ -60,3 +60,4 @@ jobs:
         with:
           path: 'apps/${{ github.event.inputs.appName }}/out'
           destination: '${{ secrets.GCP_FRONTEND_BUCKET_NAME }}/${{ github.event.inputs.appName }}'
+          parent: false
