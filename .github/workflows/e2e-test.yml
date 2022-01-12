@@ -34,7 +34,7 @@ jobs:
         with:
           command: npm run e2e
           start: npm run dev
-          wait-on: 'http://localhost:3000, http://localhost:3001, http://localhost:3002'
+          wait-on: 'http://localhost:3001/blog, http://localhost:3002/admin, http://localhost:3000/'
           browser: chrome
 
       - uses: actions/upload-artifact@v2
