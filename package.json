@@ -1,42 +1,54 @@
 {
-  "name": "johand",
-  "version": "0.0.1",
-  "license": "MIT",
-  "author": {
-    "name": "Johannes Andersen",
-    "url": "https://johand.dev/"
-  },
-  "homepage": "https://johand.dev",
-  "bugs": {
-    "url": "https://github.com/Johannes-Andersen/Johand/issues"
+  "name": "johand-dev",
+  "private": true,
+  "license": "GPL-3.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "format": "prettier --write \"**/*.{ts,tsx,js,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,md}\""
   },
   "engines": {
-    "node": ">=14",
-    "npm": ">=7"
-  },
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "test": "npm run lint && npm run type-check",
-    "type-check": "tsc --noEmit --skipLibCheck",
-    "lint": "next lint && prettier --check .",
-    "lint:fix": "prettier --write . && next lint --fix ."
-  },
-  "dependencies": {
-    "next": "12.0.7",
-    "react": "18.0.0-alpha-9fb344225-20211102",
-    "react-dom": "18.0.0-alpha-9fb344225-20211102"
+    "npm": ">=7",
+    "node": "16"
   },
   "devDependencies": {
-    "@types/react": "17.0.37",
-    "@typescript-eslint/eslint-plugin": "5.6.0",
-    "@typescript-eslint/parser": "5.6.0",
-    "eslint": "8.4.1",
-    "eslint-config-next": "12.0.7",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-jsx-a11y": "6.5.1",
     "prettier": "2.5.1",
-    "typescript": "4.5.3"
+    "turbo": "latest"
+  },
+  "turbo": {
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          "dist/**",
+          ".next/**"
+        ]
+      },
+      "lint": {
+        "outputs": []
+      },
+      "test": {
+        "outputs": [
+          "coverage/**"
+        ],
+        "dependsOn": []
+      },
+      "dev": {
+        "cache": false
+      },
+      "clean": {
+        "cache": false
+      }
+    }
   }
 }

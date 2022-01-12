@@ -2,7 +2,7 @@ import { FC } from 'react'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import styles from './index.module.css'
-import { translate } from 'locales'
+import { translate } from '../locales'
 
 const Home: FC = () => {
   const router = useRouter()

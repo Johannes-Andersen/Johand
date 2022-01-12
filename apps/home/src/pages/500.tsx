@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { translate } from 'locales'
+import { translate } from '../locales'
 
 const FiveHundredPage: FC = () => {
   const router = useRouter()
