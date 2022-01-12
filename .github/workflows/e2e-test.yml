@@ -33,3 +33,14 @@ jobs:
           start: npm run dev
           wait-on: 'http://localhost:3000, http://localhost:3001, http://localhost:3002'
           browser: chrome
+
+      - uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: e2e-screenshots
+          path: e2e/screenshots
+      - uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: e2e-videos
+          path: e2e/videos
