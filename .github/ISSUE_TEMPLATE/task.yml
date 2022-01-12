@@ -1,0 +1,53 @@
+name: Task
+description: 'Template used to create tasks. '
+title: '[Task]: '
+body:
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 'Work to be done and purpose - what is the work we are doing? '
+      description: What is the desired end state once this work is completed
+    validations:
+      required: true
+  - type: textarea
+    id: currently
+    attributes:
+      label: How do things work currently?
+      description: >-
+        Background and context - why are we doing this work? What is the
+        intended impact of the work?
+    validations:
+      required: true
+  - type: textarea
+    id: complete
+    attributes:
+      label: >-
+        What things must be true in order for this work to be considered
+        complete?
+      description: 'Definition of Done - what are the specific deliverables? '
+    validations:
+      required: true
+  - type: textarea
+    id: verify
+    attributes:
+      label: How can a reviewer verify that the work is complete?
+      description: What Testing/Verification needs to be in place?
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: 'Where is this work to be done? '
+      description: Which services/apps/packages?
+    validations:
+      required: true
+  - type: textarea
+    id: other
+    attributes:
+      label: Other relevant details
+      description: Anything else worth noting
+  - type: markdown
+    attributes:
+      value: >-
+        This template was generated with [Issue Forms
+        Creator](https://www.issue-forms-creator.app/)

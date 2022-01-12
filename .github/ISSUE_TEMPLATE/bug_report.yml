@@ -1,0 +1,45 @@
+name: Bug report
+description: Template for bug reports
+title: '[Bug]: '
+labels:
+  - 'type: bug'
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 'Clear description of the bug '
+      description: >-
+        What is the user impact  - What did we expect to happen? - What actually
+        happened?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: ㅤ1. Click here 2. Open that 3. See here
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Give an estimated priority based on impact
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+        - N/A
+    validations:
+      required: true
+  - type: textarea
+    id: cause
+    attributes:
+      label: Root Cause Analysis
+      description: Detailed information about how and why the issue occurs
+  - type: markdown
+    attributes:
+      value: >-
+        This template was generated with [Issue Forms
+        Creator](https://www.issue-forms-creator.app/)
