@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --port 3000",
     "build": "next build",
-    "lint": "next lint",
+    "lint": "next lint && stylelint \"**/*.css\"",
     "clean": "rm -rf .turbo node_modules .next package-lock.json"
   },
   "dependencies": {

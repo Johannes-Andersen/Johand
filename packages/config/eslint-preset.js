@@ -11,7 +11,6 @@ module.exports = {
     },
   },
   rules: {
-    '@next/next/no-html-link-for-pages': 'off',
     indent: ['off'],
     'linebreak-style': ['error', 'unix'],
     'brace-style': ['error', 'stroustrup', { allowSingleLine: true }],
