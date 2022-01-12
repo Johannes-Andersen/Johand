@@ -17,15 +17,18 @@ All the infrastructure is managed in a different private Infrastructure repo usi
 
 Micro-apps:
 
-- [WIP] `home`: a [Next.js](https://nextjs.org) app responsible for the SPA at https://johand.dev/
-- [WIP] `admin`: a [Next.js](https://nextjs.org) app responsible for all /admin paths at https://johand.dev/admin
-- [WIP] `blog`: a [Next.js](https://nextjs.org) app responsible for the /blog paths at https://johand.dev/blog
+- [WIP] `home`: a [Next.js](https://nextjs.org) app
+  - The home page is the main landing page for the site showing the about me section.
+- [WIP] `blog`: a [Next.js](https://nextjs.org) app
+  - This is the user facing blog. It's located on the /blog path.
+- [WIP] `admin`: a [Next.js](https://nextjs.org) app
+  - The admin app is responsible for managing and publishing blog posts. It's located on the /admin path.
 
 Tooling:
 
 - `ui`: a React component library applications. Used for shared components
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
-- `config`: Contains `eslint` configurations
+- `config`: Contains `eslint` and `stylelint` configurations
 
 ## Installation
 
@@ -63,7 +66,7 @@ Tip: You can run `npm run format` to automatically format the code
 If you want to only run a specific project test you can run:
 
 ```bash
-  npx turbo run test --scope=gateway
+  npx turbo run test --scope=home
 ```
 
 ## Run Locally
