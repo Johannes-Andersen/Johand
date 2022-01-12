@@ -1,0 +1,10 @@
+{
+  "retries": { "runMode": 2, "openMode": 0 },
+  "fixturesFolder": false,
+  "supportFile": false,
+  "pluginsFile": false,
+
+  "videosFolder": "videos",
+  "integrationFolder": "integration",
+  "screenshotsFolder": "screenshots"
+}

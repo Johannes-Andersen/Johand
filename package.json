@@ -4,12 +4,15 @@
   "license": "GPL-3.0",
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "packages/*",
+    "e2e"
   ],
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "test": "turbo run test",
+    "e2e": "turbo run e2e",
+    "e2e:dev": "turbo run e2e:dev",
     "lint": "turbo run lint",
     "clean": "turbo run clean",
     "format": "prettier --write \"**/*.{ts,tsx,js,md}\"",
@@ -47,6 +50,15 @@
         "cache": false
       },
       "clean": {
+        "cache": false
+      },
+      "e2e": {
+        "cache": false
+      },
+      "e2e:dev": {
+        "dependsOn": [
+          "dev"
+        ],
         "cache": false
       }
     }
