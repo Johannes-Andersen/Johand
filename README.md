@@ -28,7 +28,7 @@ Tooling:
 
 - `ui`: a React component library applications. Used for shared components
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
-- `config`: Contains `eslint` and `prettier` configurations
+- `config`: Contains `eslint` and `stylelint` configurations
 
 ## Installation
 
