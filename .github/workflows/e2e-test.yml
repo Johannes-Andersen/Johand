@@ -1,5 +1,5 @@
 name: End-to-end tests
-on: [push]
+on: [push, pull_request]
 
 jobs:
   cypress-run:
@@ -26,6 +26,8 @@ jobs:
 
       - name: Cypress run
         uses: cypress-io/github-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           command: npm run e2e
           start: npm run dev
