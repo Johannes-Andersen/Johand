@@ -1,3 +1,6 @@
+[![CodeQL](https://github.com/Johannes-Andersen/Johand/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Johannes-Andersen/Johand/actions/workflows/codeql-analysis.yml)
+[![Test](https://github.com/Johannes-Andersen/Johand/actions/workflows/test.yml/badge.svg)](https://github.com/Johannes-Andersen/Johand/actions/workflows/test.yml)
+
 # Johand.dev - Everything you need to know about me
 
 Although my source code is in a single repository,
