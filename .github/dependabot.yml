@@ -5,4 +5,8 @@ updates:
     schedule:
       interval: 'daily'
     labels:
-      - 'meta: dependencies'
+      - 'type: dependencies'
+    open-pull-requests-limit: 20
+    schedule:
+      interval: "weekly"
+      day: "saturday"

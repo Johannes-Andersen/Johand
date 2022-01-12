@@ -117,14 +117,9 @@ If you got any npm issues, try cleaning out the repo:
 
 ## Deployment
 
-We currently do not have a deployment process.
-We will update this section when the CI/CD pipeline is done.
+To deploy an app, head over to the GitHub action section. You will find a `deploy-app` action.
 
-<!--
-```bash
-  npm run deploy
-```
- -->
+In the dropdown, select the app you want to deploy. The app will then be built, exported and uploaded to GCP Cloud Storage.
 
 ## Tech Stack
 
