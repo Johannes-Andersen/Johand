@@ -35,3 +35,7 @@ yarn-error.log*
 # vercel
 .vercel
 tsconfig.tsbuildinfo
+
+# cypress
+e2e/videos
+e2e/screenshots

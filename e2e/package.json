@@ -1,0 +1,19 @@
+{
+  "name": "e2e-tests",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "e2e": "cypress run",
+    "e2e:dev": "cypress open",
+    "lint": "eslint .",
+    "clean": "rm -rf .turbo node_modules package-lock.json"
+  },
+  "dependencies": {
+    "cypress": "9.2.1"
+  },
+  "devDependencies": {
+    "typescript": "4.5.4",
+    "config": "*",
+    "tsconfig": "*"
+  }
+}

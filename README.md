@@ -1,7 +1,7 @@
 [![CodeQL](https://github.com/Johannes-Andersen/Johand/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Johannes-Andersen/Johand/actions/workflows/codeql-analysis.yml)
 [![Test](https://github.com/Johannes-Andersen/Johand/actions/workflows/test.yml/badge.svg)](https://github.com/Johannes-Andersen/Johand/actions/workflows/test.yml)
 
-# Johand.dev - Everything you need to know about me
+# Johand.dev - Monorepo
 
 Although my source code is in a single repository,
 it contains multiple individually deployable micro-frontends.
@@ -29,6 +29,13 @@ Tooling:
 - `ui`: a React component library applications. Used for shared components
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 - `config`: Contains `eslint` and `stylelint` configurations
+
+Miscellaneous:
+
+- `e2e`: End-to-end tests
+  - Cypress is used for this. It runs against the local server for each micro-frontend.
+- `.github/workflows/`: GitHub Actions workflow files
+  - These are used to automate the CI/CD pipeline
 
 ## Installation
 
@@ -67,6 +74,22 @@ If you want to only run a specific project test you can run:
 
 ```bash
   npx turbo run test --scope=home
+```
+
+## Running E2E tests
+
+To run all the tests in development mode, you can run the following command:
+
+```bash
+  npm run e2e:dev
+```
+
+This will spin up the apps in development mode and run the tests locally.
+
+To run it in CI mode, you need to start the apps first, then run the following command:
+
+```bash
+  npm run e2e
 ```
 
 ## Run Locally
@@ -124,7 +147,7 @@ Just make sure to write appropriate tests and lint the code.
 
 ## FAQ
 
-### Why a monorepo and micro-applications? Isn't it a bit overkill?###
+### Why a monorepo and micro-applications? Isn't it a bit overkill?
 
 Simple answer, yes.
 
