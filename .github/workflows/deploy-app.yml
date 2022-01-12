@@ -1,0 +1,62 @@
+name: Deploy App
+
+on:
+  workflow_dispatch:
+    inputs:
+      app:
+        type: choice
+        required: true
+        description: 'Choose the app you want to deploy'
+        options:
+          - 'home'
+          - 'blog'
+          - 'admin'
+
+jobs:
+  release:
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.5.1
+        with:
+          node-version: '16'
+
+      - name: Restore npm cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run format check
+        run: npm run format:check
+
+      - name: Run lint
+        run: npm run lint
+
+      - name: Run tests
+        run: npm run test
+
+      - name: Run build
+        run: npm run build
+
+      - name: Run export
+        run: |
+          cd apps/${{ app }}
+          npx next export
+
+      - name: GCP auth
+        uses: 'google-github-actions/auth@v0'
+        with:
+          credentials_json: '${{ secrets.gcp_upload_credentials }}'
+
+      - name: Upload to folder
+        uses: 'google-github-actions/upload-cloud-storage@v0'
+        with:
+          path: 'apps/${{ github.event.inputs.app }}/out'
+          destination: '${{ secrets.gcp_frontend_bucket_name }}/${{ github.event.inputs.app }}'
