@@ -1,9 +1,12 @@
 name: End-to-end tests
-on: [push, pull_request]
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   cypress-run:
-  test:
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
