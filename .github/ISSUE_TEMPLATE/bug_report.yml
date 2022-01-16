@@ -38,8 +38,3 @@ body:
     attributes:
       label: Root Cause Analysis
       description: Detailed information about how and why the issue occurs
-  - type: markdown
-    attributes:
-      value: >-
-        This template was generated with [Issue Forms
-        Creator](https://www.issue-forms-creator.app/)

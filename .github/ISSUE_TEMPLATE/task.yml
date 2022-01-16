@@ -1,5 +1,5 @@
 name: Task
-description: 'Template used to create tasks. '
+description: Template used to create tasks.
 title: '[Task]: '
 body:
   - type: textarea
@@ -46,8 +46,3 @@ body:
     attributes:
       label: Other relevant details
       description: Anything else worth noting
-  - type: markdown
-    attributes:
-      value: >-
-        This template was generated with [Issue Forms
-        Creator](https://www.issue-forms-creator.app/)

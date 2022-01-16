@@ -53,4 +53,5 @@ module.exports = {
     'import/no-anonymous-default-export': 'off',
     'jsx-a11y/no-onchange': 'off',
   },
+  ignorePatterns: ['out/**'],
 }
