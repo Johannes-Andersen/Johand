@@ -7,7 +7,7 @@
     "build": "next build",
     "lint": "next lint && stylelint \"**/*.css\"",
     "test": "jest",
-    "clean": "rm -rf .turbo node_modules .next out package-lock.json"
+    "clean": "rm -rf .turbo node_modules out .next package-lock.json"
   },
   "dependencies": {
     "next": "12.0.8",

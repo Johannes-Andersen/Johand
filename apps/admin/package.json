@@ -6,6 +6,7 @@
     "dev": "next dev --port 3002",
     "build": "next build",
     "lint": "next lint",
+    "test": "jest",
     "clean": "rm -rf .turbo node_modules out .next package-lock.json"
   },
   "dependencies": {
