@@ -10,8 +10,12 @@ module.exports = {
       rootDir: ['apps/*/', 'packages/*/'],
     },
   },
+  env: {
+    jest: true,
+  },
   rules: {
     indent: ['off'],
+    'spaced-comment': ['error', 'always', { markers: ['/'] }],
     'linebreak-style': ['error', 'unix'],
     'brace-style': ['error', 'stroustrup', { allowSingleLine: true }],
     'comma-spacing': 'error',
@@ -35,7 +39,6 @@ module.exports = {
     'space-in-parens': 'error',
     'space-infix-ops': 'error',
     'space-unary-ops': 'error',
-    'spaced-comment': 'error',
     'no-console': ['error', { allow: ['warn', 'error', 'debug'] }],
     'no-loss-of-precision': 'error',
     'no-template-curly-in-string': 'error',

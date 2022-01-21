@@ -1,35 +1,16 @@
 import type { AppProps } from 'next/app'
 import { FC } from 'react'
 import Head from 'next/head'
-import { useRouter } from 'next/router'
 import './_app.css'
 
-const App: FC<AppProps> = ({ Component, pageProps }) => {
-  const router = useRouter()
-  const { locales, pathname } = router
+const App: FC<AppProps> = ({ Component, pageProps }) => (
+  <>
+    <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </Head>
 
-  return (
-    <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {locales?.map((locale) => (
-          <link
-            key={locale}
-            rel="alternate"
-            hrefLang={locale}
-            href={`https://johand.dev/${locale}${pathname}`}
-          />
-        ))}
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href={`https://johand.dev/${pathname}`}
-        />
-      </Head>
-
-      <Component {...pageProps} />
-    </>
-  )
-}
+    <Component {...pageProps} />
+  </>
+)
 
 export default App
