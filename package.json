@@ -2,6 +2,7 @@
   "name": "johand-dev",
   "private": true,
   "license": "GPL-3.0",
+  "packageManager": "npm@8.1.2",
   "workspaces": [
     "apps/*",
     "packages/*",
@@ -24,43 +25,6 @@
   },
   "devDependencies": {
     "prettier": "2.5.1",
-    "turbo": "latest"
-  },
-  "turbo": {
-    "pipeline": {
-      "build": {
-        "dependsOn": [
-          "^build"
-        ],
-        "outputs": [
-          "dist/**",
-          ".next/**"
-        ]
-      },
-      "lint": {
-        "outputs": []
-      },
-      "test": {
-        "outputs": [
-          "coverage/**"
-        ],
-        "dependsOn": []
-      },
-      "dev": {
-        "cache": false
-      },
-      "clean": {
-        "cache": false
-      },
-      "e2e": {
-        "cache": false
-      },
-      "e2e:dev": {
-        "dependsOn": [
-          "dev"
-        ],
-        "cache": false
-      }
-    }
+    "turbo": "1.1.1"
   }
 }
