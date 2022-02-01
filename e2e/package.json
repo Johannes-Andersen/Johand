@@ -9,7 +9,7 @@
     "clean": "rm -rf .turbo node_modules package-lock.json"
   },
   "dependencies": {
-    "cypress": "9.3.1"
+    "cypress": "9.4.1"
   },
   "devDependencies": {
     "typescript": "4.5.5",
