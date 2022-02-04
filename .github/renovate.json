@@ -6,7 +6,7 @@
   },
   "rollbackPrs": true,
   "reviewersFromCodeOwners": true,
-  "prHourlyLimit" 10,
+  "prHourlyLimit": 10,
   "lockFileMaintenance": { "enabled": true },
   "schedule": ["after 10pm and before 5am every weekday", "every weekend"]
 }
