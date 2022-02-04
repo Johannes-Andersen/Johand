@@ -2,7 +2,7 @@
   "extends": ["config:base", "schedule:daily"],
   "labels": ["type: dependencies"],
   "vulnerabilityAlerts": {
-    "labels": ["type: security"],
+    "labels": ["type: security"]
   },
   "rollbackPrs": true,
   "lockFileMaintenance": { "enabled": true }
