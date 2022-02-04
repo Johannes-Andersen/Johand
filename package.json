@@ -20,8 +20,8 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,js,md}\""
   },
   "engines": {
-    "npm": ">=7",
-    "node": "16"
+    "npm": "^8",
+    "node": "^16"
   },
   "devDependencies": {
     "prettier": "2.5.1",
