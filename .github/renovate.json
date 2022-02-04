@@ -8,5 +8,11 @@
   "reviewersFromCodeOwners": true,
   "prHourlyLimit": 10,
   "lockFileMaintenance": { "enabled": true },
-  "schedule": ["after 10pm and before 5am every weekday", "every weekend"]
+  "schedule": ["after 10pm and before 5am every weekday", "every weekend"],
+  "force": {
+    "constraints": {
+      "node": "^16",
+      "npm": "^8"
+    }
+  }
 }
