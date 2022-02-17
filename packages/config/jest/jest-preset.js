@@ -1,8 +1,4 @@
 module.exports = {
-  transform: {
-    '.(ts|tsx)$': 'ts-jest',
-    '.(js|jsx)$': 'babel-jest', // jest's default
-  },
   transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$'],
   testURL: 'http://localhost/',
   moduleDirectories: ['node_modules'],
