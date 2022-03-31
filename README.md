@@ -41,11 +41,11 @@ Miscellaneous:
 
 ## Installation
 
-Make sure you got `Node 16` and `npm 7` or higher installed.
+Make sure you got `Node 17` and `npm 7` or higher installed.
 You can use [n](https://github.com/tj/n) to manage your Node versions:
 
 ```bash
-  n 16
+  n 17
 ```
 
 After getting the correct `n` version installed, you should run the following command in the **root of the repo**.

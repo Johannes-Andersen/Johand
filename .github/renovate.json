@@ -11,7 +11,7 @@
   "schedule": ["after 10pm and before 5am every weekday", "every weekend"],
   "force": {
     "constraints": {
-      "node": "^16",
+      "node": "^17",
       "npm": "^8"
     }
   }
