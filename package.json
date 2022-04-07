@@ -21,7 +21,7 @@
   },
   "engines": {
     "npm": "^8",
-    "node": "^17"
+    "node": ">=16"
   },
   "devDependencies": {
     "prettier": "2.6.1",
