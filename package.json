@@ -2,7 +2,7 @@
   "name": "johand-dev",
   "private": true,
   "license": "GPL-3.0",
-  "packageManager": "npm@8.6.0",
+  "packageManager": "npm@8.7.0",
   "workspaces": [
     "apps/*",
     "packages/*",
@@ -25,6 +25,6 @@
   },
   "devDependencies": {
     "prettier": "2.6.2",
-    "turbo": "1.2.3"
+    "turbo": "1.2.4"
   }
 }
