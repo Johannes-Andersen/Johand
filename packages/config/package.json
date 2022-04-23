@@ -10,7 +10,7 @@
   "dependencies": {
     "stylelint": "14.7.1",
     "stylelint-config-standard": "25.0.0",
-    "eslint": "8.13.0",
+    "eslint": "8.14.0",
     "eslint-config-next": "12.1.5",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-jsx-a11y": "6.5.1",
