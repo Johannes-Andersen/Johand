@@ -8,14 +8,14 @@
     "jest"
   ],
   "dependencies": {
-    "stylelint": "14.8.1",
+    "stylelint": "14.8.2",
     "stylelint-config-standard": "25.0.0",
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.6",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-cypress": "2.12.1",
-    "@testing-library/react": "13.1.1",
+    "@testing-library/react": "13.2.0",
     "@testing-library/jest-dom": "5.16.4",
     "ts-jest": "27.1.4",
     "identity-obj-proxy": "3.0.0",
