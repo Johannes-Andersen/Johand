@@ -19,6 +19,6 @@
     "@testing-library/jest-dom": "5.16.4",
     "ts-jest": "27.1.4",
     "identity-obj-proxy": "3.0.0",
-    "@types/jest": "27.5.0"
+    "@types/jest": "27.5.1"
   }
 }
