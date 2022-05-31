@@ -16,7 +16,7 @@
     "ui": "*"
   },
   "devDependencies": {
-    "@types/react": "18.0.9",
+    "@types/react": "18.0.10",
     "next-transpile-modules": "9.0.0",
     "typescript": "4.7.2",
     "config": "*",
