@@ -2,17 +2,24 @@
   "extends": ["config:base", "group:allNonMajor"],
   "labels": ["type: dependencies"],
   "vulnerabilityAlerts": {
-    "labels": ["type: security"]
+    "labels": ["type: dependencies", "type: security"],
+    "automerge": true
   },
   "rollbackPrs": true,
   "reviewersFromCodeOwners": true,
   "prHourlyLimit": 10,
-  "lockFileMaintenance": { "enabled": true },
-  "schedule": ["after 10pm and before 5am every weekday", "every weekend"],
+  "lockFileMaintenance": { "enabled": true, "automerge": true },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true,
+      "platformAutomerge": true
+    }
+  ],
   "force": {
     "constraints": {
-      "node": "^17",
-      "npm": "^8"
+      "node": "18",
+      "npm": "8"
     }
   }
 }
