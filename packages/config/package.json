@@ -20,6 +20,6 @@
     "jest-environment-jsdom": "28.1.0",
     "ts-jest": "28.0.4",
     "identity-obj-proxy": "3.0.0",
-    "@types/jest": "28.1.0"
+    "@types/jest": "28.1.1"
   }
 }
