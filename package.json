@@ -24,7 +24,7 @@
     "node": ">=16"
   },
   "devDependencies": {
-    "prettier": "2.7.0",
+    "prettier": "2.7.1",
     "turbo": "1.2.16"
   }
 }
