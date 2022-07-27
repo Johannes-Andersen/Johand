@@ -2,7 +2,7 @@
   "name": "johand-dev",
   "private": true,
   "license": "GPL-3.0",
-  "packageManager": "npm@8.15.0",
+  "packageManager": "npm@8.15.1",
   "workspaces": [
     "apps/*",
     "packages/*",
