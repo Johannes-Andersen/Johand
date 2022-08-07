@@ -9,7 +9,7 @@
     "clean": "rm -rf .turbo node_modules package-lock.json"
   },
   "devDependencies": {
-    "@types/react": "18.0.15",
+    "@types/react": "18.0.16",
     "@types/react-dom": "18.0.6",
     "typescript": "4.7.4",
     "tsconfig": "*",
