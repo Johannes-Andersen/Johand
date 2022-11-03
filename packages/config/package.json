@@ -8,7 +8,7 @@
     "jest"
   ],
   "dependencies": {
-    "stylelint": "14.14.0",
+    "stylelint": "14.14.1",
     "stylelint-config-standard": "29.0.0",
     "eslint": "8.26.0",
     "eslint-config-next": "12.3.2",
