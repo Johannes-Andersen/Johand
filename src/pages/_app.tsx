@@ -9,8 +9,8 @@ const hyperlegible = Atkinson_Hyperlegible({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={hyperlegible.className}>
+    <div className={hyperlegible.className}>
       <Component {...pageProps} />
-    </main>
+    </div>
   )
 }
