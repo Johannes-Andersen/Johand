@@ -2,7 +2,7 @@
   "name": "johand-dev",
   "private": true,
   "license": "GPL-3.0",
-  "packageManager": "npm@8.19.3",
+  "packageManager": "npm@9.1.1",
   "workspaces": [
     "apps/*",
     "packages/*",
@@ -20,7 +20,7 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,js,md}\""
   },
   "engines": {
-    "npm": "^8",
+    "npm": "^9.0.0",
     "node": ">=18"
   },
   "devDependencies": {
