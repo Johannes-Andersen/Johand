@@ -14,6 +14,5 @@ If this closes an issue, please include "closes #XXXX" in your comment to auto-c
 - [ ] I have verified that any tests that I have supplied with this Pull Request work and I have fixed any code which caused pre-existing tests to fail.
 - [ ] I have updated any documentation or deploy jobs if required.
 - [ ] I have linted my code to ensure that it is formatted correctly.
-- [ ] I have updated the translation files if possible.
 
 <!-- Thank you for your submission and for contributing to my site! -->

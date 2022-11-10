@@ -2,29 +2,36 @@
   "name": "johand-dev",
   "private": true,
   "license": "GPL-3.0",
-  "packageManager": "npm@8.19.3",
-  "workspaces": [
-    "apps/*",
-    "packages/*",
-    "e2e"
-  ],
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "test": "turbo run test",
-    "e2e": "turbo run e2e",
-    "e2e:dev": "turbo run e2e:dev",
-    "lint": "turbo run lint",
-    "clean": "turbo run clean",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no tests just yet\" && exit 0",
+    "lint": "next lint",
+    "clean": "rm -rf .next",
     "format": "prettier --write \"**/*.{ts,tsx,js,md}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,md}\""
   },
   "engines": {
-    "npm": "^8",
-    "node": ">=18"
+    "npm": ">=8",
+    "node": ">=19"
+  },
+  "dependencies": {
+    "@next/font": "13.0.2",
+    "next": "13.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.8.4"
   },
   "devDependencies": {
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.8",
+    "autoprefixer": "10.4.13",
+    "eslint": "8.27.0",
+    "eslint-config-next": "13.0.2",
+    "postcss": "8.4.18",
     "prettier": "2.7.1",
-    "turbo": "1.6.3"
+    "tailwindcss": "3.2.3"
   }
 }

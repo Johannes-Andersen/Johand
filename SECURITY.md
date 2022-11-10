@@ -4,7 +4,7 @@ This document outlines general security procedures and policies for the Johand.d
 
 ## Reporting a vulnerability
 
-Please report security vulnerabilities to Johannes via [email](mailto:jotoffen@gmail.com) to work on verifying the vulnerability and fixing it. You will receive a response within 48 hours. Please allow the vulnerability to be fixed before any public exposure, as this will help protect all of the people who use a fork of the repo.
+Please report security vulnerabilities to Johannes via the built in Github advisories at https://github.com/Johannes-Andersen/Johand/security/advisories/new. You should receive a response within 48 hours. Please allow the vulnerability to be fixed before any public exposure, as this will help protect all of the people who use a fork of the repo.
 
 Within the report of the issue, please provide the following information:
 
