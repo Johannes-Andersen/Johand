@@ -14,7 +14,7 @@
   },
   "engines": {
     "npm": ">=8",
-    "node": ">=19"
+    "node": ">=18"
   },
   "dependencies": {
     "@next/font": "13.0.2",
