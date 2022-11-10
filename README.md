@@ -54,7 +54,7 @@ In the root of the repo, you can spin up the website by running:
 
 ## Deployment
 
-To deploy an app, just merge your changes to the `main`branch. The site will then be built, uploaded and deployed.
+To deploy an app, just merge your changes into the `main` branch. The site will then be built, uploaded and deployed.
 
 ## Tech Stack
 
@@ -64,7 +64,7 @@ Currently this is the allowed Tech Stack. Please ask me before adding something 
 
 **Styling:** Tailwind, CSS modules
 
-**Testing:** Cypress, Jest, React-Testing-Library
+**Testing:** Playwright
 
 **Linting/Formatting:** Eslint, prettier
 

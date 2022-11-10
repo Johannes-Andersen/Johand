@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "echo \"Error: no tests just yet\" && exit 0",
+    "test": "npx playwright test",
     "lint": "next lint",
     "clean": "rm -rf .next",
     "format": "prettier --write \"**/*.{ts,tsx,js,md}\"",
@@ -24,6 +24,7 @@
     "typescript": "4.8.4"
   },
   "devDependencies": {
+    "@playwright/test": "1.27.1",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.8",
