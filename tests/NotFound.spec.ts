@@ -1,17 +1,17 @@
 import { test, expect } from '@playwright/test'
 import AxeBuilder from '@axe-core/playwright'
 
-test.describe('Homepage', () => {
-  test('Homepage has correct title', async ({ page }) => {
-    await page.goto('/')
+test.describe('Not Found', () => {
+  test('Not found page has correct title', async ({ page }) => {
+    await page.goto('/wazzzup')
 
-    await expect(page).toHaveTitle(/Create Next App/)
+    await expect(page).toHaveTitle('Page Not Found')
   })
 
   test('should not have any automatically detectable accessibility issues', async ({
     page,
   }) => {
-    await page.goto('/')
+    await page.goto('/wazzzup')
 
     const accessibilityScanResults = await new AxeBuilder({ page }).analyze()
 

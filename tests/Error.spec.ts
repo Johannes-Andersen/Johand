@@ -1,17 +1,17 @@
 import { test, expect } from '@playwright/test'
 import AxeBuilder from '@axe-core/playwright'
 
-test.describe('Homepage', () => {
-  test('Homepage has correct title', async ({ page }) => {
-    await page.goto('/')
+test.describe('Error Found', () => {
+  test('Error page has correct title', async ({ page }) => {
+    await page.goto('/500')
 
-    await expect(page).toHaveTitle(/Create Next App/)
+    await expect(page).toHaveTitle('Internal server error')
   })
 
   test('should not have any automatically detectable accessibility issues', async ({
     page,
   }) => {
-    await page.goto('/')
+    await page.goto('/500')
 
     const accessibilityScanResults = await new AxeBuilder({ page }).analyze()
 
