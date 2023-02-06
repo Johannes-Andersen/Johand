@@ -17,7 +17,7 @@
     "node": ">=18"
   },
   "dependencies": {
-    "@headlessui/react": "1.7.9",
+    "@headlessui/react": "1.7.10",
     "@heroicons/react": "2.0.14",
     "@next/font": "13.1.6",
     "next": "13.1.6",
