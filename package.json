@@ -28,8 +28,8 @@
   "devDependencies": {
     "@axe-core/playwright": "4.7.3",
     "@playwright/test": "1.37.1",
-    "@types/node": "18.17.7",
-    "@types/react": "18.2.20",
+    "@types/node": "18.17.8",
+    "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.15",
     "eslint": "8.47.0",
